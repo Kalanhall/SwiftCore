@@ -1,0 +1,20 @@
+PODS:
+  - SwiftCore (1.0.0):
+    - SwiftCore/Extension (= 1.0.0)
+    - SwiftCore/Plugin (= 1.0.0)
+  - SwiftCore/Extension (1.0.0)
+  - SwiftCore/Plugin (1.0.0)
+
+DEPENDENCIES:
+  - SwiftCore (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftCore:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftCore: 73db4503301f1470e28f0723432498497ce20159
+
+PODFILE CHECKSUM: 968d42037baf12e968a82ae290081a5dde804ebe
+
+COCOAPODS: 1.10.1
