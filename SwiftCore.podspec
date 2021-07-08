@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftCore'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of SwiftCore.'
 
 # This description is used to generate tags and improve search results.
@@ -21,16 +21,22 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Kalanhall@163.com/SwiftCore'
+  s.homepage         = 'https://github.com/Kalanhall'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Kalanhall@163.com' => 'jianming.wu@beantechs.com' }
-  s.source           = { :git => 'https://github.com/Kalanhall@163.com/SwiftCore.git', :tag => s.version.to_s }
+  s.author           = { 'Kalanhall@163.com' => 'jianming.wu@company.com' }
+  s.source           = { :git => 'https://github.com/Kalanhall/SwiftCore.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
-
-  s.source_files = 'SwiftCore/Classes/**/*'
+  s.ios.deployment_target = '10.0'
+  
+  s.subspec 'Extension' do |s|
+    s.source_files = 'SwiftCore/Classes/Extension/**/*'
+  end
+  
+  s.subspec 'Plugin' do |s|
+    s.source_files = 'SwiftCore/Classes/Plugin/**/*'
+  end
   
   # s.resource_bundles = {
   #   'SwiftCore' => ['SwiftCore/Assets/*.png']
@@ -38,5 +44,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  
 end

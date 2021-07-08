@@ -22,7 +22,7 @@ pod 'SwiftCore'
 
 ## Author
 
-Kalanhall@163.com, jianming.wu@beantechs.com
+Kalanhall@163.com, jianming.wu@company.com
 
 ## License
 
